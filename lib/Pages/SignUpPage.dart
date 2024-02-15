@@ -26,7 +26,7 @@ class _SignUpPageState extends State<SignUpPage> {
     String cpassword = cpasswordController.text.toString().trim();
     if(email.isEmpty || password.isEmpty || fullname.isEmpty || cpassword.isEmpty) return;
     if(cpassword != password){
-      Utils.fireToast("Parollar bir birga mos emas");
+      Utils.fireToast(context,"Parollar bir birga mos emas");
       return;
     }
     Navigator.pushReplacementNamed(context, HomePage.id);

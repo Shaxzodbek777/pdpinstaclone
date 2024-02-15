@@ -3,7 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 class Utils {
 
-  static void fireToast(String msg){
+  static void fireToast(BuildContext context,String msg){
     Fluttertoast.showToast(
       msg: msg,
       toastLength: Toast.LENGTH_SHORT,
